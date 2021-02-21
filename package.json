@@ -1,0 +1,35 @@
+{
+    "name": "vscode-syntax-ext",
+    "displayName": "Sample extension for VSCode",
+    "description": "...",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "sample",
+                "aliases": [
+                    "sample"
+                ],
+                "extensions": [
+                    ".sample"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "sample",
+                "scopeName": "source.sample",
+                "path": "./syntaxes/sample.tmLanguage.json",
+                "embeddedLanguages": {
+                    "source.sample": "haskell"
+                }
+            }
+        ]
+    }
+}
